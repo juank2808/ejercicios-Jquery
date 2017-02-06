@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contar el número de elementos con jquery</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+$( "#other" ).click(function() {
+  $( ".target" ).change();
+  $( "#other" ).click(function() {
+  $( ".target" ).change();
+});
+});
+</script>
+</head>
+<body>
+<form>
+  <input class="target" type="text" value="Field 1">
+  <select class="target">
+    <option value="option1" selected="selected">Option 1</option>
+    <option value="option2">Option 2</option>
+  </select>
+</form>
+<div id="other">
+  Trigger the handler
+</div>
+</body>
+</html>
