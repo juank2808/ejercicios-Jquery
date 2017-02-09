@@ -1,0 +1,30 @@
+iframe{
+    border-color: black;
+    height: 800px;
+}
+.cuadrado {
+     width: 100px; 
+     height: 100px; 
+     background: #428bca;
+}
+div#c1.cuadrado{
+    border:solid;
+    position:absolute;
+}
+div#c2.cuadrado{
+    border:solid;
+    position:absolute;
+    right:493px;
+}
+div#c3.cuadrado{
+    border:solid;
+    position:absolute;
+    bottom: 533px;
+    
+}
+div#c4.cuadrado{
+    border:solid;
+    position:absolute;
+    bottom: 533px;
+    right:493px;
+}
