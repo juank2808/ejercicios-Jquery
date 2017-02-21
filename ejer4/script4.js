@@ -65,25 +65,65 @@ $(document).ready(function(){
 	 alert("acción prohibida");
 	});
 /**PUNTO 4**/
+    var cuadroEntrada;
+    
     $("#c1").hover(function() {
         $("#c1").text("Cuadro1");
-    },function(){
-        $("#c1").text("");
+        console.log("has entrado por Cuadro"+cuadroEntrada);
+        cuadroEntrada=1;
     });
     $("#c2").hover(function() {
-       
-        $("#c2").text("Cuadro2") 
-    },function(){
-        $("#c2").text("");
+        $("#c2").text("Cuadro2")
+        console.log("has entrado por Cuadro"+cuadroEntrada);
+        cuadroEntrada=2;
     });
     $("#c3").hover(function() {
         $("#c3").text("Cuadro3");
-    },function(){
-        $("#c3").text("");
+        console.log("has entrado por Cuadro"+cuadroEntrada);
+        cuadroEntrada=3;
     });
     $("#c4").hover(function() {
         $("#c4").text("Cuadro4") ;
-    },function(){
-        $("#c4").text("");
+        console.log("has entrado por Cuadro"+cuadroEntrada);
+        cuadroEntrada=4;
     });
+    $("#c4, #c3,#c2,#c1").mouseout(function(){
+        $(this).html("");
+                   
+    });
+/**PUNTO 5**/
+    
+   $("#pedir").click(function(){
+        $("#cafe").prop("checked", true);
+    });
+     $("input").click(function(){
+      $("span").css('font-style','normal');   
+        if(this.checked){
+        $(this).next().css('font-style','italic');                        
+        }
+        
+  });             
+ /**PUNTO 6**/
+    
+ 
+     $('textarea').keyup(function(){
+   
+          var cont=0; 
+          var pal = $(this).val();
+          pal=pal.split("");
+            for(var i in pal){
+               if ((pal[i]=="a") || (pal[i]=="e") || (pal[i]=="i") || (pal[i]=="o") || (pal[i]=="u")){
+                cont++;
+                }
+            }
+                if(cont%2==0){
+                  $("textarea").css('background-color','#99ddff');
+                   }else{
+                      $("textarea").css('background-color','#ff6600'); 
+                    }  
+                console.log(cont);    
+                });
+            
+        
+    
 }); 

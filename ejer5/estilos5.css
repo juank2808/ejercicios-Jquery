@@ -1,0 +1,17 @@
+ div.cuadTres, div.cuadCuatro, div.cuadDos, div.cuadUno{
+    width: 150px;
+    height: 150px;
+    background-color: #b71c1c;
+    float: left;
+  }
+  div.cuadTres, div.cuadCuatro{
+    margin-top: 500px;
+  }  
+  
+  div.cuadDos, div.cuadCuatro{
+    margin-left: 850px;
+
+  }
+  div{
+      position: fixed
+  }
